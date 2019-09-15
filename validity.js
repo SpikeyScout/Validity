@@ -66,3 +66,4 @@ client.on("message", message => {
         }
 });
 client.login(config.token)
+// And you, too, are valid!
