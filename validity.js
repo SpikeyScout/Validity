@@ -64,6 +64,30 @@ client.on("message", message => {
         console.log("sending info!")
         message.channel.send("Commands: val!stat, val!uptime, val!help. Repsonds to multiple forms of 'not valid'.")
         }
+        if (message.content.startsWith("val!info")) {
+            console.log('Somebody just the info command.')
+            message.channel.send({embed: {
+                color: 7506394,
+                author: {
+                  name: client.user.username,
+                  icon_url: client.user.avatarURL
+                },
+                title: "Validity - The bot that wants you to know your valid!",
+                url: "https://github.com/SpikeyScout/Validity",
+                description: "I am owned by scoutie#2020.",
+                fields: [{
+                    name: "The Scout Space - Validity's home",
+                    value: "Come join us in [The Scout Space!](https://discord.gg/uVVcDDJ) We chill and play games. We also have a Minecraft server!"
+                  },
+                ],
+                timestamp: new Date(),
+                footer: {
+                  icon_url: client.user.avatarURL,
+                  text: "Validity - You are valid!"
+                }
+              }
+            });
+        }
 });
 client.login(config.token)
 // And you, too, are valid!
