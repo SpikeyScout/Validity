@@ -52,18 +52,27 @@ client.on("message", message => {
         if (message.author.bot) return;
         const transhuggy = client.emojis.find(emoji => emoji.name === "transhuggy");
         message.reply(`you are valid and loved! ${transhuggy}`);
+    // suicide comments
     }
     if(message.content.includes('kill myself'))  {
         if (message.author.bot) return;
-        message.reply(`suicide is not answer nor a funny thing to joke about. If you truly need help, please contact the Suicide Prevention Hotline, or checkout r/suicidewatch. (https://www.reddit.com/r/suicidewatch/) ||Did this message trigger incorrectly or at a wrong time? If so please contact scoutie#2020.||`)
+        message.reply(`suicide is not answer nor a funny thing to joke about. If you truly need help, please contact the Suicide Prevention Hotline, or checkout r/suicidewatch. (https://www.reddit.com/r/suicidewatch/) Remember, you are loved and someone in the world cares for you, even if it might not seem like it. ||Did this message trigger incorrectly or at a wrong time? If so please contact scoutie#2020.||`)
     }
-    if(message.content.includes('want to die'))  {
+    if(message.content.includes('to die'))  {
         if (message.author.bot) return;
-        message.reply(`suicide is not answer nor a funny thing to joke about. If you truly need help, please contact the Suicide Prevention Hotline, or checkout r/suicidewatch. (https://www.reddit.com/r/suicidewatch/) ||Did this message trigger incorrectly or at a wrong time? If so please contact scoutie#2020.||`)
+        message.reply(`suicide is not answer nor a funny thing to joke about. If you truly need help, please contact the Suicide Prevention Hotline, or checkout r/suicidewatch. (https://www.reddit.com/r/suicidewatch/) Remember, you are loved and someone in the world cares for you, even if it might not seem like it. ||Did this message trigger incorrectly or at a wrong time? If so please contact scoutie#2020.||`)
     }
     if(message.content.includes('noose'))  {
         if (message.author.bot) return;
-        message.reply(`suicide is not answer nor a funny thing to joke about. If you truly need help, please contact the Suicide Prevention Hotline, or checkout r/suicidewatch. (https://www.reddit.com/r/suicidewatch/) ||Did this message trigger incorrectly or at a wrong time? If so please contact scoutie#2020.||`)
+        message.reply(`suicide is not answer nor a funny thing to joke about. If you truly need help, please contact the Suicide Prevention Hotline, or checkout r/suicidewatch. (https://www.reddit.com/r/suicidewatch/) Remember, you are loved and someone in the world cares for you, even if it might not seem like it. ||Did this message trigger incorrectly or at a wrong time? If so please contact scoutie#2020.||`)
+    }
+    if(message.content.includes('kill me'))  {
+        if (message.author.bot) return;
+        message.reply(`suicide is not answer nor a funny thing to joke about. If you truly need help, please contact the Suicide Prevention Hotline, or checkout r/suicidewatch. (https://www.reddit.com/r/suicidewatch/) Remember, you are loved and someone in the world cares for you, even if it might not seem like it. ||Did this message trigger incorrectly or at a wrong time? If so please contact scoutie#2020.||`)
+    }
+    if(message.content.includes('was dead'))  {
+        if (message.author.bot) return;
+        message.reply(`suicide is not answer nor a funny thing to joke about. If you truly need help, please contact the Suicide Prevention Hotline, or checkout r/suicidewatch. (https://www.reddit.com/r/suicidewatch/) Remember, you are loved and someone in the world cares for you, even if it might not seem like it. ||Did this message trigger incorrectly or at a wrong time? If so please contact scoutie#2020.||`)
     }
         // Extra stuff
     if (message.content === "val!info") {
@@ -107,7 +116,7 @@ client.on("message", message => {
                 timestamp: new Date(),
                 footer: {
                   icon_url: client.user.avatarURL,
-                  text: "Validity v1.1 - You are valid!"
+                  text: "Validity v1.1.1 - You are valid!"
                 }
               }
             });
