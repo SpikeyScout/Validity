@@ -2,8 +2,8 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require("./config.json");
 client.on('ready', () => {
-client.user.setPresence({ game: { name: 'with hugs and snuggles!'} , type: 1 });
-  console.log(`Logged in as ${client.user.tag}!`);
+client.user.setPresence({ game: { name: 'with hugs and cuddles! uwu'} , type: 1 });
+  console.log(`Logged in as ${client.user.tag} at ${client.readyAt}!`);
 });
 let guildArray = client.guilds.array();
 client.on('guildCreate', (guild) => {
@@ -52,8 +52,13 @@ client.on("message", message => {
         if (message.author.bot) return;
         const transhuggy = client.emojis.find(emoji => emoji.name === "transhuggy");
         message.reply(`you are valid and loved! ${transhuggy}`);
-    // suicide comments
     }
+    if(message.content.includes("validn't")) {
+        if (message.author.bot) return;
+        const transhuggy = client.emojis.find(emoji => emoji.name === "transhuggy");
+        message.reply(`you are valid and loved! ${transhuggy}`);
+    }
+        // suicide comments
     if(message.content.includes('kill myself'))  {
         if (message.author.bot) return;
         message.reply(`suicide is not answer nor a funny thing to joke about. If you truly need help, please contact the Suicide Prevention Hotline, or checkout r/suicidewatch. (https://www.reddit.com/r/suicidewatch/) Remember, you are loved and someone in the world cares for you, even if it might not seem like it. ||Did this message trigger incorrectly or at a wrong time? If so please contact scoutie#2020.||`)
