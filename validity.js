@@ -11,6 +11,7 @@ client.on('guildCreate', (guild) => {
     let SendChannel = guild.channels.find("name", "general") || guild.channels.find("name", "chat");
     if(SendChannel) SendChannel.send(`Hi! I'm Validity, the Discord bot that wants to let you know your valid! If any problems arise, please DM scoutie#2020 with the issue. Thank you, and you are valid!`)
 });
+// Validity Base
 client.on("message", message => {
     if(message.content.includes('not valid')) {
         if (message.author.bot) return;
@@ -52,6 +53,19 @@ client.on("message", message => {
         const transhuggy = client.emojis.find(emoji => emoji.name === "transhuggy");
         message.reply(`you are valid and loved! ${transhuggy}`);
     }
+    if(message.content.includes('kill myself'))  {
+        if (message.author.bot) return;
+        message.reply(`suicide is not answer nor a funny thing to joke about. If you truly need help, please contact the Suicide Prevention Hotline, or checkout r/suicidewatch. (https://www.reddit.com/r/suicidewatch/) ||Did this message trigger incorrectly or at a wrong time? If so please contact scoutie#2020.||`)
+    }
+    if(message.content.includes('want to die'))  {
+        if (message.author.bot) return;
+        message.reply(`suicide is not answer nor a funny thing to joke about. If you truly need help, please contact the Suicide Prevention Hotline, or checkout r/suicidewatch. (https://www.reddit.com/r/suicidewatch/) ||Did this message trigger incorrectly or at a wrong time? If so please contact scoutie#2020.||`)
+    }
+    if(message.content.includes('noose'))  {
+        if (message.author.bot) return;
+        message.reply(`suicide is not answer nor a funny thing to joke about. If you truly need help, please contact the Suicide Prevention Hotline, or checkout r/suicidewatch. (https://www.reddit.com/r/suicidewatch/) ||Did this message trigger incorrectly or at a wrong time? If so please contact scoutie#2020.||`)
+    }
+        // Extra stuff
     if (message.content === "val!info") {
     if (message.author.bot) return;
     console.log("sending info!")
@@ -93,11 +107,11 @@ client.on("message", message => {
                 timestamp: new Date(),
                 footer: {
                   icon_url: client.user.avatarURL,
-                  text: "Validity v1.00 - You are valid!"
+                  text: "Validity v1.1 - You are valid!"
                 }
               }
             });
         }
 });
 client.login(config.token)
-// And you, too, are valid!
+// And you, too, are valid
