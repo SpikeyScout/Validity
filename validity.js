@@ -93,7 +93,7 @@ client.on("message", message => {
                 timestamp: new Date(),
                 footer: {
                   icon_url: client.user.avatarURL,
-                  text: "Validity - You are valid!"
+                  text: "Validity v1.00 - You are valid!"
                 }
               }
             });
