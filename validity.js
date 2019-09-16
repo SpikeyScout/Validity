@@ -5,47 +5,57 @@ client.on('ready', () => {
 client.user.setPresence({ game: { name: 'with hugs and snuggles!'} , type: 1 });
   console.log(`Logged in as ${client.user.tag}!`);
 });
+let guildArray = client.guilds.array();
+client.on('guildCreate', (guild) => {
+    console.log('I have joined the guild ' + guild.name)
+    let SendChannel = guild.channels.find("name", "general") || guild.channels.find("name", "chat");
+    if(SendChannel) SendChannel.send(`Hi! I'm Validity, the Discord bot that wants to let you know your valid! If any problems arise, please DM scoutie#2020 with the issue. Thank you, and you are valid!`)
+});
 client.on("message", message => {
     if(message.content.includes('not valid')) {
         if (message.author.bot) return;
-        message.reply('you are valid and loved!');
+        const transhuggy = client.emojis.find(emoji => emoji.name === "transhuggy");
+        message.reply(`you are valid and loved! ${transhuggy}`);
     }
     if(message.content.includes('no valid')) {
         if (message.author.bot) return;
-        message.reply('you are valid and loved!');
+        const transhuggy = client.emojis.find(emoji => emoji.name === "transhuggy");
+        message.reply(`you are valid and loved! ${transhuggy}`);
     }
     if(message.content.includes('Not valid')) {
         if (message.author.bot) return;
-        message.reply('you are valid and loved!');
+        const transhuggy = client.emojis.find(emoji => emoji.name === "transhuggy");
+        message.reply(`you are valid and loved! ${transhuggy}`);
     }
     if(message.content.includes('No valid')) {
         if (message.author.bot) return;
-        message.reply('you are valid and loved!');
+        const transhuggy = client.emojis.find(emoji => emoji.name === "transhuggy");
+        message.reply(`you are valid and loved! ${transhuggy}`);
     }
     if(message.content.includes('invalid')) {
         if (message.author.bot) return;
-        message.reply('you are valid and loved!');
+        const transhuggy = client.emojis.find(emoji => emoji.name === "transhuggy");
+        message.reply(`you are valid and loved! ${transhuggy}`);
     }
     if(message.content.includes('Invalid')) {
         if (message.author.bot) return;
-        message.reply('you are valid and loved!');
+        const transhuggy = client.emojis.find(emoji => emoji.name === "transhuggy");
+        message.reply(`you are valid and loved! ${transhuggy}`);
     }
     if(message.content.includes('non valid')) {
         if (message.author.bot) return;
-        message.reply('you are valid and loved!');
+        const transhuggy = client.emojis.find(emoji => emoji.name === "transhuggy");
+        message.reply(`you are valid and loved! ${transhuggy}`);
     }
     if(message.content.includes('non-valid')) {
         if (message.author.bot) return;
-        message.reply('you are valid and loved!');
-    }
-    if(message.content.includes('non valid')) {
-        if (message.author.bot) return;
-        message.reply('you are valid and loved!');
+        const transhuggy = client.emojis.find(emoji => emoji.name === "transhuggy");
+        message.reply(`you are valid and loved! ${transhuggy}`);
     }
     if (message.content === "val!info") {
     if (message.author.bot) return;
     console.log("sending info!")
-    message.channel.send("Hi! I am Validity, a bot run by scoutie#2020! I respond to anyone who calls themselves not valid, as thats just not true.💙")
+    message.channel.send("Hi! I am Validity, a bot run by scoutie#2020! I respond to anyone who calls themselves not valid, as thats just not true. 💙 Check the embed below for more info!")
     }
     if (message.content === "val!stat") {
     if (message.author.bot) return;
