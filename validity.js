@@ -48,7 +48,7 @@ client.on('message', message => {
             },
             title: 'Validity - The bot that wants you to know that you\'re valid!',
             url: 'https://github.com/SpikeyScout/Validity',
-            description: 'Created by scoutie#2020.',
+            description: 'Created by scoutie#2020, with help from some cool and epic people.',
             fields: [{
               name: "The Scout Space - Validity's home",
               value: 'Come join us in [The Scout Space!](https://discord.gg/uVVcDDJ) We chill and play games. We also have a Minecraft server!'
@@ -57,7 +57,7 @@ client.on('message', message => {
             timestamp: new Date(),
             footer: {
               icon_url: client.user.avatarURL,
-              text: 'Validity v1.1.1 - You are valid!'
+              text: 'Validity v1.2 - You are valid!'
             }
           }
         })
