@@ -72,7 +72,7 @@ client.on('message', message => {
         message.channel.send(`I have been up for ${client.uptime * 0.001} seconds. Started at ${client.readyAt}.`)
         break
       case 'help':
-        message.channel.send("Commands: val!stat, val!uptime, val!help. Responds to multiple forms of 'not valid'.")
+        message.channel.send("Commands: val!stat, val!uptime, val!help. Responds to different self-deprecating comments.")
         break
     }
   }
