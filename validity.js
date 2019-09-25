@@ -30,7 +30,7 @@ client.on('message', message => {
   }
 
   if (suicideRegex.test(message.content)) {
-    message.reply('Suicide is never the answer nor is it a funny thing to joke about. If you truly need help, please contact the Suicide Prevention Hotline, or checkout r/suicidewatch. (https://www.reddit.com/r/suicidewatch/) Remember, you are loved and someone in the world cares for you, even if it might not seem like it. ||Did this message trigger incorrectly or at a wrong time? If so please contact scoutie#2020.||')
+    message.author.send('Suicide is never the answer nor is it a funny thing to joke about. If you truly need help, please contact the Suicide Prevention Hotline, or checkout r/suicidewatch. (https://www.reddit.com/r/suicidewatch/) Remember, you are loved and someone in the world cares for you, even if it might not seem like it. ||Did this message trigger incorrectly or at a wrong time? If so please contact scoutie#2020.||')
     return
   }
 
