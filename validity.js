@@ -58,7 +58,7 @@ client.on('message', message => {
             timestamp: new Date(),
             footer: {
               icon_url: client.user.avatarURL,
-              text: 'Validity v1.2 - You are valid!'
+              text: 'Validity v1.2.2 - You are valid!'
             }
           }
         })
@@ -77,9 +77,17 @@ client.on('message', message => {
         break
       case 'logout':
       if(message.author.id !== config.ownerID) return;
-      client.reply('turning off! See you soon.')
-      client.destroy
-      break
+      message.reply('turning off! See you soon.')
+      console.log('Shut off by command.')
+      client.destroy()
+        break
+      case 'restart':
+      if(message.author.id !== config.ownerID) return;
+      message.reply('restarting! Give me a second.')
+      console.log('Restarting by command.')
+      client.destroy()
+      client.login(config.token)
+        break
     }
   }
 })
