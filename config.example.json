@@ -1,4 +1,5 @@
 {
 	"token": "your token goes here",
-	"prefix": "val!"
+	"prefix": "val!",
+	"ownerID": "your user ID"
 }

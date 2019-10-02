@@ -75,6 +75,11 @@ client.on('message', message => {
       case 'help':
         message.channel.send("Commands: val!stat, val!uptime, val!help. Responds to different self-deprecating comments.")
         break
+      case 'logout':
+      if(message.author.id !== config.ownerID) return;
+      client.reply('turning off! See you soon.')
+      client.destroy
+      break
     }
   }
 })
