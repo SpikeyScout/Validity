@@ -31,6 +31,7 @@ client.on('message', message => {
 
   if (suicideRegex.test(message.content)) {
     message.react('💖')
+    console.log(`${message.author.username} in ${message.guild.name} just said a message relating to self-harm!`)
     message.author.send('Suicide is never the answer nor is it a funny thing to joke about. If you are planning on self-harm/suicide, please contact the Suicide Prevention Hotline, or checkout r/suicidewatch. (https://www.reddit.com/r/suicidewatch/) __Remember, you are loved and someone in the world cares for you, even if it might not seem like it.__ ||Did this message trigger incorrectly or at a wrong time? If so please contact scoutie#2020.||')
     return
   }
@@ -58,7 +59,7 @@ client.on('message', message => {
             timestamp: new Date(),
             footer: {
               icon_url: client.user.avatarURL,
-              text: 'Validity v1.2.2 - You are valid!'
+              text: 'Validity v1.2.5 - You are valid!'
             }
           }
         })
@@ -87,6 +88,7 @@ client.on('message', message => {
       console.log('Restarting by command.')
       client.destroy()
       client.login(config.token)
+      message.reply('back online!')
         break
     }
   }
