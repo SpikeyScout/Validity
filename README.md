@@ -20,3 +20,5 @@ soon:tm:
 soon:tm:
 
 maybe
+
+goddamn this bot was a meme
