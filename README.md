@@ -1,4 +1,6 @@
-# Validity
+# This bot is now archived. I have no intentions of picking it back up.
+
+## Validity
 
 "**You are valid!**" Validity said, and from that day forward, that was the law of the land.
 
